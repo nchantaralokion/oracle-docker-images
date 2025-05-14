@@ -1,0 +1,11 @@
+name: oracle-12c
+services:
+  oracle:
+    image: oracle/database:12.2.0.1-se
+    environment:
+      ORACLE_PWD: Admin123
+    volumes:
+      - ../../docker-container-volumes/12.2.0.1:/opt/oracle/oradata
+    ports:
+      - "1521:1521"
+      - "5500:5500"
