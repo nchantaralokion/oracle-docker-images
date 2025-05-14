@@ -16,4 +16,4 @@ Provides container build files to create an Oracle Connection Manager container 
 
 ## For Viking
 1. Copy the Oracle Database 12.2.0.1 installer files to the `SingleInstance/dockerfiles/12.2.0.1` directory.
-1. From the `SingleInstance/dockerfiles` directory, run `buildContainerImage.sh -v 12.2.0.1 -t oracle/database:12.2.0.1-ee -e`
+1. From the `SingleInstance/dockerfiles` directory, run `buildContainerImage.sh -v 12.2.0.1 -t oracle/database:12.2.0.1-se -s`
