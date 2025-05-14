@@ -15,4 +15,5 @@ Provides Podman build files to create an Oracle RAC Database podman image. For m
 Provides container build files to create an Oracle Connection Manager container image. If you are planing to run RAC containers on single host and RAC containers IPs are not accessible on your network, you can use connection manager image to access RAC database on your network. For more details, see [OracleConnectionManager/README.md](./OracleConnectionManager/README.md)
 
 ## For Viking
-Inside the `SingleInstance/dockerfiles` directory, run `buildContainerImage.sh -v 12.2.0.1 -t oracle/database:12.2.0.1-ee -e`
+1. Copy the Oracle Database 12.2.0.1 installer files to the `SingleInstance/dockerfiles/12.2.0.1` directory.
+1. From the `SingleInstance/dockerfiles` directory, run `buildContainerImage.sh -v 12.2.0.1 -t oracle/database:12.2.0.1-ee -e`
